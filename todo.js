@@ -13,7 +13,6 @@ function addTask () {
       // add new item as part of existing list
       document.getElementById("tasks").appendChild(item); 
 
-      /* Step 4 below here */ 
       input.value = "";
       input.placeholder = "enter next task...";
   }
@@ -24,7 +23,6 @@ function markDone (item) {
   item.className = 'finished';
 }
 
-/* Step 7 below here */
 function remove (item) {
   // remove item completely from document
   if(item.className === "finished"){
@@ -32,14 +30,12 @@ function remove (item) {
   }
 }
 
-/* Step 11 below here */
 function doAbout() {
   let authorName = document.getElementById("divabout");
   authorName.innerHTML = "Author is Dami";
   authorName.className = "aboutcolor"; 
 }
 
-/* Step 14 below here */
 function clearAbout() {
   let authorName = document.getElementById("divabout");
   authorName.innerHTML = "";
